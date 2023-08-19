@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="international.css">
+<script src="script.js"></script>
+</head>
+<body>
+<h1>Hello ,Please Click On the Button Given Below to Register</h1>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click Here To Register</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="mailto:habibtoursgzb9@gmail.com" method="post" enctype="text/plain">
+    <div class="imgcontainer">
+      <h2 id="inter-book">Register for International Ticket Booking</h2>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Name (As per Adhaar)</b></label>
+      <input type="text" placeholder="Enter Name" name="Name" required>
+      <label for="fname"><b>Father's Name (As per Adhaar)</b></label>
+      <input type="text" placeholder="Enter Father's Name" name="Father's Name" required>
+      <label for="dob"><b>D.O.B (DD-MM-YYYY)</b></label><br>
+      <input type="date" placeholder="Enter Date of Birth" name="D.O.B" required><br>
+      <label for="phone"><b>Phone</b></label>
+      <input type="number" placeholder="Enter Number" name="Number" required>
+      <label for="adhaar"><b>Adhaar Number</b></label>
+      <input type="number" placeholder="Enter Adhaar Number" name="Adhaar Number" required>
+      <label for="address"><b>Address (As per Adhaar)</b></label>
+      <input type="text" placeholder="Enter address" name="Address" required>
+      <label for="comment"><b>Comments</b></label>
+      <input type="text" placeholder="Write Your Comments Here" name="Comments" required>
+        
+      <button><input type="submit" value="Submit" class="send"></button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

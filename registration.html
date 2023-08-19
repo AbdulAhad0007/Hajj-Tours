@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<title>Pre-Registration Form</title>
+<link rel="stylesheet" href="registration.css">
+<script src="script.js"></script>
+<html>
+<body>
+
+<h2>Pre-Registration Form For Upcoming Hajj</h2>
+
+<form action="mailto:habibtoursgzb9@gmail.com" method="post" enctype="text/plain" id="myForm">
+    <div class="container">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="Name" required><br></td>
+            </tr>
+            <tr>
+                <td>D.O.B (DD-MM-YYYY):</td>
+                <td><input type="date" name="Date of Birth" required><br></td>
+            </tr>
+            <tr>
+                <td>E-mail 1:</td>
+                <td><input type="email" name="E-mail-1" required><br></td>
+            </tr>
+            <tr>
+                <td>E-mail 2: (optional)</td>
+                <td><input type="email" name="E-mail-2"><br></td>
+            </tr>
+            <tr>
+                <td>Phone 1:</td>
+                <td><input type="text" name="Number-1" required><br></td>
+            </tr>
+            <tr>
+                <td>Phone 2: (optional)</td>
+                <td><input type="text" name="Number-2"><br></td>
+            </tr>
+            <tr>
+                <td>Address Line 1:</td>
+                <td><input type="text" name="Address Line-1" required><br></td>
+            </tr>
+            <tr>
+                <td>Address Line 2:</td>
+                <td><input type="text" name="Address Line-2" required><br></td>
+            </tr>
+            <tr>
+                <td>Preferable travel day before Hajj? (DD-MM-YYYY)</td>
+                <td><input type="date" name="Travel Day Before Hajj"  required><br></td>
+            </tr>
+            <tr>
+                <td>Approximate number of days spending in KSA for Hajj? </td>
+                <td>
+                    <select days name="Preffered No. Of Days to Spend In Saudi Arabia" >
+                        <option value="select">--Select--</option>
+                        <option value="12 Days">12 days</option>
+                        <option value="20 Days">20 days</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="comment">
+Comment:<br>
+<textarea id="textarea" cols="30" rows="10" name="Comments"></textarea>
+        </div>
+<div class="values">
+<input type="submit" value="Send Details" class="send" onclick="sendButton()">
+<input type="reset" value="Reset Form" class="reset">
+</div>
+   
+    </div>
+</form>
+
+</body>
+</html>

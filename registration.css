@@ -1,0 +1,71 @@
+ /* Styling the form container */
+ body{
+  background-color: lightgrey;
+  }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Styling the form elements */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td {
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling the submit and reset buttons */
+.send,
+.reset {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send:hover,
+.reset:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+    font-size: 14px;
+  }
+  .send,
+  .reset {
+    font-size: 14px;
+  }
+}
